@@ -1,0 +1,17 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:user_story_db;DB_CLOSE_DELAY=-1
+    username: user
+    password:
+
+springdoc:
+  swagger-ui:
+    path: /documentation
+  api-docs:
+    path: /api-docs
+  packages-to-scan: tech_task.user_story.controller
+
